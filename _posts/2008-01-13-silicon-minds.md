@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Silicon Minds"
+description: ""
+category:
+tags: [Machine Learning]
+---
+{% include JB/setup %}
+
+The guys at Microsoft Research [announced](http://blogs.technet.com/apg/archive/2007/12/23/silicon-minds.aspx) a very exciting competition: [the silicon minds challenge](http://www.dreambuildplay.com/). The goal of the competition is to foster novel ideas in the area of game AI.
+
+Many years ago I wrote a computer game called De Profundis where I was in charge (among other things) of the game AI. Moving on to become an AI researcher it is interesting to reminisce and draw some connections.
+
+On one hand, the game AI field is the perfect arena to try out new ideas for AI researchers. For AI researchers working on agents, planning and human interaction (speech, NLP) I could imagine it would be extremely valueable to interact with MMORPG's (Massive Multiplayer Online Role Playing Games). I don't know whether anyone in the research community has ever done this before, but having an unlimited source of humans to interact with seems like quite the experimental setup. This also applies to virtual worlds like second life ofcourse. AI Research has contributed to the game AI field ofcourse, so let me highlight two recent projects:
+* [The university of Alberta games group](http://www.cs.ualberta.ca/~games/): these guys do some amazing work on several kinds of games. As far as I understand it, most of their efforst are focussed on games where the mathematics are in some sense understood: chess, poker, ... What I mean by the mathematics are understood is that with infinite computational capabilities, we would be able to solve these games. The U of A group also do some work on AI for real time strategy games (e.g. Age of Empires). A mathematical analysis of these games is much harder (if possible at all). The AI necessary for these games is much closer to what I would think of as strong AI.
+* [The Applied Games Group at Microsoft research](http://research.microsoft.com/mlp/apg): the organizers of the silicon minds challenge have developed a few innovations for game AI themselves. Their machine learning approach to inferring gamer skills (know as TrueSkill) is used by the XBox Live service. They have also enhanced Forza Motorsport with a reinforcement learning agent that learns to drive from observing human drivers.
+
+Unfortunately, the game AI field has very special requirements that prohibit the use of many innovations from the research community. First and foremost, game AI are supposed to make games more fun. More sophisticated agents do not necessarily mean more fun: one can spend a large amount of time making opponents (in first person shooters or racing games) smarter, but if that means the player always looses, he or she might not enjoy the game that much. Also, games are big business, and game engineers want to understand the behavior of their agents. It is unacceptable to release an agent out in the open which in the middle of a battle starts to act weird. Hence, game engineers often limit the intelligence of agents to (pre-historic ?!?) methods such as rule based systems and (heuristic) search because they can understand the behavior and debug it more easily. (It would be unfair to forget to give credit to the people that have applied reinforcement learning and neural networks to games; afaik mostly in the areas of racing games.) To get a rough idea about what is hot-or-not in the game AI field, take a look at [AI Wisdom](http://www.aiwisdom.com/).
+
+One could say, who cares what technique to use: rules and search work incredibly well! Very true. In my humble opinion, the AI/machine learning community has sometimes over-focussed on new algorithms and models and too little on building intelligent solutions. Although in fields like robotics, biology and vision, our machine learning tools have had a huge impact, I think there are many fields where the AI community does not have a good understanding on how to integrate all our tools to make a large working system. Hence, silicon minds looks like a promising challenge and I am very excited to see what people come up with.
