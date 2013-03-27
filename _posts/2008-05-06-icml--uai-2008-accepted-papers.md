@@ -3,7 +3,7 @@ layout: post
 title: "ICML and UAI 2008 Accepted Papers"
 description: ""
 category:
-tags: []
+tags: [iHMM,Machine Learning]
 ---
 {% include JB/setup %}
 

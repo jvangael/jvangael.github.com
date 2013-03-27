@@ -3,7 +3,7 @@ layout: post
 title: "Gold's Theorem"
 description: ""
 category:
-tags: []
+tags: [Cognitive Science]
 ---
 {% include JB/setup %}
 
