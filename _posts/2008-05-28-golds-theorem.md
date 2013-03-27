@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Gold's Theorem"
+description: ""
+category:
+tags: []
+---
+{% include JB/setup %}
+
+After seeing [this](http://videolectures.net/icml07_tenenbaum_bmhi/) amazing talk by Josh Tenenbaum on videolectures.net, I started reading up on some very cool stuff at the intersection of machine learning and cognitive science. This brought me to read on Gold's theorem and [the poverty of the stimulus](http://en.wikipedia.org/wiki/Poverty_of_the_stimulus). Very roughly, Gold's theorem says that any learner (be it a child or a computer) cannot "learn" a language by only acquiring sentences from the language she has to learn. Some people use this theorem to make the following argument: a toddler will only hear sentences from the language she is learning, she never gets to hear "wrong" (as in not in the language) sentences. Hence, since by Gold's theorem this toddler cannot learn the language, it must be innate: language abilities must be wired into our brains in some way. [Gold's Theorem and Cognitive Science](http://www.cog.jhu.edu/courses/680/papers/Johnson.GoldsTheorem.pdf), by Kent Johnson is a very enjoyable read for more background on Gold's theorem and how it applies to the question of language acquisition.
+
+Johnson's paper mentions something that I had never thought about: according to [Morgan](http://www.google.co.uk/search?hl=en&lr=&q=%22Morgan%22+%22Learnability+Considerations+*+*+Nature%22), a child acquires language after hearing about 4 million sentences. Now think [about](http://trec.nist.gov/data/reuters/reuters.html) [how](http://www.inf.ed.ac.uk/resources/corpora/) [many](http://www.ldc.upenn.edu/Catalog/index.jsp) sentences we have access to to train our NLP algorithms on. This is orders of magnitude more than a person ever gets to hear and yet I would say we are far from building a computer system that can manipulate language as accurate as humans. From a Bayesian perspective, this could translate into assuming children having a really good prior which they start from when learning language. If the Bayesian way is the right way to look at this question, I really wonder how humans acquire this prior: how much is wired up in our brains, how much is it influenced by our sensory system, ...?
