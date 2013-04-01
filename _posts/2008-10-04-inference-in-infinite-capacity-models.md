@@ -18,13 +18,13 @@ What I've been thinking about lately is something completely different. Our work
 
 After a suggestion by [Radford Neal](http://www.cs.toronto.edu/~radford/) I also looked into a different scheme to adaptively truncate the iHMM. The algorithm is an adaptation of the embedded HMM sampling scheme for nonlinear dynamical systems. Imagine we draw the trellis for the infinite dimensional state space of an iHMM:
 
-++++
+![Image 1]({{ BASE_PATH }}/assets/images/2008-10-04-inference-in-infinite-capacity-models_1.png)
 
 The horizontal ... denote that there are T time steps in the iHMM, the vertical ... denote that there are a possible infinite number of state the iHMM can be in. The grayed out nodes denote a initial state sequence assignment (we are going to sample here). Note that I haven't draw all the possible transition arrows, in general there is a nonzero transition from every node at time t-1 to time t.
 
 The embedded HMM sampler works as follows: for each time step, we create a pool of states which we want to include in the deterministic inference which we will run later. In the image below, I denote the states in the pool by shading them with light gray. The size of this pool will be a parameter which we can choose later (in the picture below it is 2).
 
-++++
+![Image 1]({{ BASE_PATH }}/assets/images/2008-10-04-inference-in-infinite-capacity-models_2.png)
 
 We can choose how to draw the pools but one must make sure that the states from the previous sample (see picture above) are certainly included in the pool; it is also desirable to not spend too much computation on selecting the pool of states.
 One iteration of a sampler consists of sampling the pool states and then running the forward-filtering backward-sampling algorithm in a finite graphical model that only uses pool states. If you go through the math you will find that you'll have to slightly modify the dynamic program to make this work. I will post a short technical report with some mathematical details on my web page soon.
