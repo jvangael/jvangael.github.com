@@ -18,6 +18,9 @@ Yoram Bachrach, Thore Graepel, Gjergji Kasneci, Michal Kosinski, and Jurgen Van 
 
 Proceedings of the 11th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2012)
 
+#### [Bayesian Nonparametric Hidden Markov Models]({{ BASE_PATH }}/assets/thesis.pdf)
+PhD Thesis, Jurgen Van Gael
+
 
 ### 2011
 
