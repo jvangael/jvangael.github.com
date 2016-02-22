@@ -8,7 +8,8 @@ layout: page
 </div>
 
 <div style="float: left; margin-left: 40px" markdown="1">
-  ###Jurgen Van Gael
+
+  <h3>Jurgen Van Gael</h3>
 
   **Data Science Director, [Rangespan](http://www.rangespan.com)**
 
