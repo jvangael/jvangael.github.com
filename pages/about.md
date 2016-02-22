@@ -11,7 +11,7 @@ description: ""
 
 <div style="float: left; margin-left: 10px" markdown="1">
 
-  ###Jurgen Van Gael
+  <h3>Jurgen Van Gael</h3>
 
   **Data Science Director, [Rangespan](http://www.rangespan.com)**
 
