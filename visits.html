@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jurgen Countries</title>
+  <link rel="stylesheet" href="jquery-jvectormap-2.0.5.css" type="text/css" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="jquery-jvectormap-2.0.5.min.js"></script>
+  <script src="jquery-jvectormap-world-mill.js"></script>
+</head>
+
+<body>
+  <div id="world-map" style="width: 1000px; height: 800px"></div>
+  <script>
+    var visitData = {
+      "BE": 22,
+      "US": 3,
+      "GB": 15,
+      "IE": 1,
+      "FR": 2,
+      "DE": 1,
+      "CH": 2,
+      "AT": 1,
+      "NL": 1,
+      "ES": 1,
+      "PT": 1,
+      "DK": 1,
+      "NO": 1,
+      "SE": 1,
+      "FI": 1,
+      "PL": 1,
+      "CZ": 1,
+      "IT": 1,
+      "TH": 1,
+      "IN": 1,
+      "ZA": 1,
+      "CA": 1,
+      "MX": 1,
+      "SG": 1,
+      "TR": 1
+    };
+    $(function () {
+      $('#world-map').vectorMap({
+        map: 'world_mill',
+        series: {
+          regions: [{
+            values: visitData,
+            scale: ['#C8EEFF', '#0071A4'],
+            normalizeFunction: 'polynomial'
+          }]
+        },
+        onRegionTipShow: function (e, el, code) {
+          el.html(el.html() + ' ' + code);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
